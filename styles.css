@@ -1,0 +1,20 @@
+/* #2D3748	#2B6CB0	#E2E8F0	#FFFFFF
+FONTS: Header - Georgia Paragraph - Arial */
+
+header {
+    display: grid;
+    background-color: #2b6cb0;
+    grid-template-columns: 1fr 1fr;
+}
+
+header h1 {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+nav {
+    display: grid;
+    justify-self: right;
+    align-content: center;
+    margin-right: 10px;
+}
