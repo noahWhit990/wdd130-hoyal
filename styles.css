@@ -18,3 +18,47 @@ nav {
     align-content: center;
     margin-right: 10px;
 }
+.container {
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 40px;
+    margin: 40px;
+}
+#myBtnContainer {
+    display: flex;
+    padding: 10px;
+    border-color: #E2E8F0;
+    border-width: 2px;
+    border-style: solid;
+    justify-content: left;
+    flex: auto;
+    margin-top: 20px;
+}
+#myBtnContainer .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #E2E8F0;
+    cursor: pointer;
+    font-size: 18px;
+}
+#myBtnContainer .btn:hover {
+    background-color: #ddd;
+}
+#myBtnContainer .btn.active {
+    background-color: #2B6CB0;
+    color: white;
+}
+#myBtnContainter .btn.active:hover {
+    background-color: #4076b0;
+    color: white;
+}
+.filterDiv {
+    padding: 20px;
+    border: 1px solid #E2E8F0;
+    margin-top: 20px;
+}
+.filterimg {
+    width: 200px;
+    display: flex;
+}
