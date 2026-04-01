@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Rexburg Eats | Reviews</title>
 </head>
 <body>
@@ -14,7 +15,23 @@
             <a href="about.html">About</a>
         </nav>
     </header>
-
+    <div class="container">
+        <h1>All Reviews</h1>
+        <div id="myBtnContainer">
+            <h3>Filter Reviews:</h3>
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('cars')"> Five Stars</button>
+            <button class="btn" onclick="filterSelection('animals')"> Four Stars</button>
+            <button class="btn" onclick="filterSelection('fruits')"> Three Stars</button>
+            <button class="btn" onclick="filterSelection('colors')"> New</button>
+        </div>
+        <div class="filterDiv">
+            <img src="images/screenshot.png" alt="Review 1" class="filterimg">
+            <h3>Burger Shack</h3>
+            <p>⭐⭐⭐⭐⭐ - Best burger in town! Highly recommend.</p>
+            <button class="btn">Read Full Review</button>
+        </div>
+    </div>
     <footer>
         <p>Rexburg Eats • </p>
         <a href="index.html">Home</a>

@@ -126,4 +126,111 @@ nav a:hover {
     background-color: #e2e8f0;
     border-left: 2px solid gray;
     border-right: 2px solid gray;
+}.container {
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 40px;
+    margin: 40px;
+}
+#myBtnContainer {
+    display: flex;
+    padding: 10px;
+    border-color: #E2E8F0;
+    border-width: 2px;
+    border-style: solid;
+    justify-content: left;
+    flex: auto;
+    margin-top: 20px;
+}
+#myBtnContainer .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #E2E8F0;
+    cursor: pointer;
+    font-size: 18px;
+}
+#myBtnContainer .btn:hover {
+    background-color: #ddd;
+}
+#myBtnContainer .btn.active {
+    background-color: #2B6CB0;
+    color: white;
+}
+#myBtnContainter .btn.active:hover {
+    background-color: #4076b0;
+    color: white;
+}
+.filterDiv {
+    padding: 20px;
+    border: 1px solid #E2E8F0;
+    margin-top: 20px;
+}
+.filterimg {
+    width: 200px;
+    display: flex;
+}
+
+/*About page*/
+#aboutheader {
+    background: #E2E8F0;
+    justify-self: center;
+    color: #2D3748;
+    text-decoration: underline #2B6CB0;
+    margin: 0px 8px;
+    width: 100%;
+    justify-items: center;
+    padding: 30px 0px;
+}
+#aboutheader h1 {
+    margin: 0px;
+}
+#aboutjames {
+    background: white;
+    color: #2D3748;
+    padding: 15px;
+}
+#james_photo {
+    float: left;
+    width: 300px;
+    height: 250px;
+    border: solid 1px #E2E8F0;
+    margin-right: 15px;
+    background-color: #E2E8F0;
+}
+#about_reviews {
+    color: #2D3748;
+    border-top: 2px solid #E2E8F0;
+    border-bottom: 2px solid #E2E8F0;
+    margin: 0px 20px;
+    padding: 0px 30px;
+}
+#about_reviews h1 {
+    justify-self: center;
+}
+#about_reviews div {
+    border:#2D3748 solid 1px;
+    justify-items: center;
+    padding: 10px;
+    margin: 20px 10px;
+}
+#about_reviews section {
+    display: flex;
+    flex-direction: row;
+}
+#get_in_touch {
+    display: flex;
+    flex-direction: column;
+    color: #2D3748;
+    margin: 0px;
+    padding-bottom: 200px;
+    align-items: center;
+}
+#get_in_touch a {
+    align-self: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #2B6CB0;
+    color: white;
+    margin: 10px;
 }
