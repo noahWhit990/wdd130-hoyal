@@ -5,16 +5,125 @@ header {
     display: grid;
     background-color: #2b6cb0;
     grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 header h1 {
     color: #ffffff;
     margin-left: 10px;
+    font-family: Georgia;
 }
 
 nav {
     display: grid;
-    justify-self: right;
-    align-content: center;
-    margin-right: 10px;
+    grid-auto-flow: column;
+}
+
+nav a {
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial;
+}
+
+nav a:hover {
+    color: #2d3748;
+}
+
+#hero-img {
+    margin: 10px;
+    width: 1325px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #2d3748;
+    border-radius: 10px;
+}
+
+#slogan {
+    display: flex;
+    background-color: #2b6cb0;
+    height: 40px;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+#slogan p {
+    color: white;
+    font-family: Arial;
+}
+
+#featured {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #e2e8f0;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.featured-reviews {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    border: 2px solid gray;
+    background-color: white;
+    width: 80%;
+    height: 300px;
+    justify-self: center;
+    padding: 10px;
+    text-align: left;
+}
+
+#featured h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+    border-bottom: 5px solid #2b6cb0;
+    width: 30%;
+    justify-self: center;
+    padding: 5px;
+}
+
+.featured-img {
+    margin: 10px;
+    width: 90%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.featured-reviews p, .featured-reviews h3, .featured-reviews a {
+    margin: 5px 0;
+}
+
+.featured-reviews a {
+    width: 100%;
+    text-align: center;
+    background-color: #2b6cb0;
+    color: white;
+    text-decoration: none;
+}
+
+.featured-reviews a:hover {
+    color: #2d3748;
+}
+
+.stars {
+    color: rgb(228, 250, 34);
+}
+
+#recent {
+    display: grid;
+    background-color: #e2e8f0;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
 }
